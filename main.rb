@@ -1,7 +1,8 @@
 require 'sinatra'
-		get '/' do
-			erb :home
-		end
+
+get '/' do
+	erb :home
+end
 
 get '/log_in' do
 	erb :log_in
