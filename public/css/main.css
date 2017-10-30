@@ -23,6 +23,7 @@ p {
 	padding-right: 170px;
 	margin-top: 30px;
 	border-radius: 5px;
+	position: relative;
 }
 
 
@@ -41,6 +42,10 @@ p {
 	right: 6%;
 	top: 20%;
 	border-radius: 5px;
+}
+
+.product-box img p{
+	width: 100px;
 }
 
 #form_container {
@@ -84,8 +89,7 @@ p {
 	background: darkgray;
 }
 
-textarea{
-	height: 100px;
-	width: 400px;
-	border-radius: 5px;
+#col_container{
+	overflow: scroll;
+	height: 450px;
 }
