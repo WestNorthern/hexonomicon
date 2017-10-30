@@ -96,6 +96,14 @@ p {
 	font-weight: bold;
 }
 
+.donkers_text{
+	background: red;
+	border-radius: 5px;
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+}
+
 .ad_container {
 	border: 2px solid darkgray;
 	overflow: scroll;
@@ -188,5 +196,15 @@ textarea {
 	float: left;
 	font-weight: bold;
 	padding: 20px;
+}
+
+#donkers_image{
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+.dink_donk_image{
+	width: 100px;
+	margin-bottom: 10px;
 }
 
