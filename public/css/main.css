@@ -27,6 +27,18 @@ p {
 	position: relative;
 }
 
+.about-box{
+	position: relative;
+	height: 300px;
+	background: black;
+	padding: 3%;
+	border-radius: 5px;
+	color: ghostwhite;
+}
+
+.about-box h1{
+	text-align: center;
+}
 
 .product-box h1 {
 	font-size: 1.4em;
@@ -121,3 +133,39 @@ textarea {
 	display: none;
 }
 
+#audio_controls{
+	position: relative;
+	left: 100px;
+}
+#rolf_image{
+	background-image: url("/img/spooky_rolf.jpg");
+	width: 250px;
+	height: 250px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+}
+#ryan_image{
+	background-image: url("/img/ryan_spooky.jpg");
+	width: 250px;
+	height: 250px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#lindsey_image{
+	background-image: url("/img/lindsey_pic.jpg");
+	width: 250px;
+	height: 250px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+}
+.about_us_image_container{
+	margin-top: 10px;
+	padding: 5px;
+}
