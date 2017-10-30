@@ -77,21 +77,28 @@ p {
 	padding: 5px;
 }
 
-#morbid_card_image{
+#morbid_card_image {
 	width: 90px;
 	margin-bottom: 5px;
 }
 
-.morbid_ad_text{
+.morbid_ad_text {
 	border-radius: 5px;
 	padding: 10px;
 	font-weight: bold;
 	background: darkgray;
 }
 
-#col_container{
+#col_container {
 	overflow: scroll;
-	height: 450px;
+	height: 600px;
+}
+
+
+textarea {
+	width: 300px;
+	height: 100px;
+	border-radius: 4px;
 }
 
 #bald_pic_container{
