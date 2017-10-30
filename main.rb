@@ -28,6 +28,7 @@ get '/services' do
 end
 		
 get '/cart' do
+	params[:controller] = 'cart'
 	erb :cart
 end
 	

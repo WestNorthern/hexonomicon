@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <style>
 
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -61,10 +62,12 @@
         <li class="<%= 'active' if params[:controller] == 'about' %>"><a href="/about">About</a></li>
         <li class="<%= 'active' if params[:controller] == 'services' %>"><a href="/services">Services</a></li>
         <li class="<%= 'active' if params[:controller] == 'contact' %>"><a href="/contact">Contact</a></li>
-        <li class="<%= 'active' if params[:controller] == '#' %>"><a href="/cart">Cart</a></li>
+        <li class="<%= 'active' if params[:controller] == 'cart' %>"><a href="/cart">Cart</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="<%= 'active' if params[:controller] == 'login' %>"><a href="/log_in"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="/cart">Checkout</a></li>
+        <li class="<%= 'active' if params[:controller] == 'cart' %>"><a href="/log_in"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        
       </ul>
     </div>
   </div>
@@ -84,7 +87,7 @@
       <div class="well">
         <div class="ad_container">
           <p class="sad_donut_text">Sad Donuts co.</p>
-          <img id="sad_donut_image" src="/img/sad_donut.jpg" alt="">
+          <img id="sad_donut_image" src="/img/sad_donut.jpg" alt="Frowning Like a Donut">
           <p class="sad_donut_text">
             What happens to the half eaten, the stale and the forgotten donuts of this world?
           </p>
@@ -95,7 +98,7 @@
       <div class="well">
         <div class="ad_container">
           <p class="morbid_ad_text">Morbid Greetings</p>
-          <img id="morbid_card_image" src="/img/morbid_card.jpg" alt="">
+          <img id="morbid_card_image" src="/img/morbid_card.jpg" alt="Don't fear the reaper.">
           <p class="morbid_ad_text">Need to tell someone "Sorry you're dying," but can't find a Hallmark card that cuts it?</p>
           <p class="morbid_ad_text">At Morbid Greetings we provide that card</p>
           <p class="morbid_ad_text">Morbid Greetings on State Street and 87th <br> 1-801-666-MORB</p>
