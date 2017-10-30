@@ -1,3 +1,7 @@
+body {
+	background: ghostwhite;
+}
+
 
 .sidenav {
 	background-image: url('/img/alchemy.jpeg');
@@ -65,4 +69,10 @@ p {
 	overflow: scroll;
 	height: 125px;
 	border-radius: 5px
+}
+
+textarea{
+	height: 100px;
+	width: 400px;
+	border-radius: 5px;
 }
