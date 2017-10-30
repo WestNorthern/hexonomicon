@@ -20,7 +20,8 @@
 }
 
 .ad_container{
-	border: 1px solid black;
+	border: 2px solid darkgray;
 	overflow: scroll;
 	height: 125px;
+	border-radius: 5px
 }
