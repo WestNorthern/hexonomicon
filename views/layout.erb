@@ -17,7 +17,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 600px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -53,14 +53,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">HEX</a>
+      <a class="navbar-brand" href="/log_in">HEX</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/about">About</a></li>
         <li><a href="/services">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
         <li><a href="/cart">Cart</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -75,28 +75,38 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left">
-      <%= yield %>
-      <hr>
+      <div id="col_container">
+        <%= yield %>
+        <hr>
+      </div>
     </div>
     <div class="col-sm-2 sidenav">
-      <div class="ad_container">
-        <div class="well">
+      <div class="well">
+        <div class="ad_container">
           <p class="sad_donut_text">Sad Donuts co.</p>
           <img id="sad_donut_image" src="/img/sad_donut.jpg" alt="">
-          <p class="sad_donut_text">What happens to the half eaten, the stale and the forgotten donuts of this world?</p>
+          <p class="sad_donut_text">
+            What happens to the half eaten, the stale and the forgotten donuts of this world?
+          </p>
           <p class="sad_donut_text">We sell them to you for cheap</p>
           <p class="sad_donut_text">Sad Donuts co. on main street and 45th <br> 1-801-455-SAAD</p>
         </div>
       </div>
       <div class="well">
-        <p>ADS</p>
+        <div class="ad_container">
+          <p class="morbid_ad_text">Morbid Greetings</p>
+          <img id="morbid_card_image" src="/img/morbid_card.jpg" alt="">
+          <p class="morbid_ad_text">Need to tell someone "Sorry you're dying," but can't find a Hallmark card that cuts it?</p>
+          <p class="morbid_ad_text">At Morbid Greetings we provide that card</p>
+          <p class="morbid_ad_text">Morbid Greetings on State Street and 87th <br> 1-801-666-MORB</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Brought to you by The Code Coven. You can reach us individually at github: <br><a href="https://github.com/LindseyJ22">Lindsey</a>  <a href="https://github.com/r0lfs">Rolf</a> <a href="https://github.com/WestNorthern">Ryan</a></p>
+  <p>Brought to you by The Code Coven. You can reach us individually at github: <br><a href="https://github.com/LindseyJ22" style="color: violet; margin-right: 10px;">Lindsey</a>  <a href="https://github.com/r0lfs" style="color: violet; margin-right: 10px;">Rolf</a> <a href="https://github.com/WestNorthern" style="color: violet; margin-right: 10px;">Ryan</a></p>
 </footer>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
