@@ -94,6 +94,7 @@ p {
 	height: 450px;
 }
 
-#order_row {
-	
+#bald_pic_container{
+	display: none;
 }
+
