@@ -1,51 +1,48 @@
-const curseNameArray = ['Financial Ruin', 'Song Stuck in their Head', 'Tribute', 'Filler for now', 'Always forgetting where the remote is', 'blah, blah, blah'];
+const orderArray = ['hexOne', 'hexTwo', 'hexThree', 'hexFour', 'hexFive', 'hexSix'];
+const curseNameArray = ['Financial Ruin Curse', 'Barren Head Curse', 'Flatulence Jinx', 'The Odorous Ordeal', 'Plague of Powerlessness', 'blah, blah, blah'];
 const priceArray = [1000, 2000, 3000, 4000, 5000, 6000];
 
 class Cart {
 
-	constructor(cursed, order){
-		this.cursed = cursed;
+	constructor(order){
 		this.order = order;
+		this.displayCart();
 	}
+
 
 	displayCart(){
+		let total = 0
 		for (let i = 0; i < this.order.length; i++) {
-			if (this.order[i] > 0){
-				$('#curseCol').append(`<div class="col" style="background: black; color: ghostwhite">${curseNameArray[i]}:</div>`);
-				$('#quantCol').append(`<div class="col" style="background: black; color: ghostwhite">${this.order[i]}:</div>`);
-				$('#priceCol').append(`<div class="col" style="background: black; color: ghostwhite">${priceArray[i]}:</div>`);
-				$('removeCol').append(`<div class="btn-group btn-group-sm" role="group" aria-label="...">Remove</div>`);
+			if (localStorage.getItem(this.order[i]) > 0){
+				$('#curseCol').append(`<div class="col" style="background: black; color: ghostwhite">${curseNameArray[i]}</div>`);
+				$('#priceCol').append(`<div class="col" style="background: black; color: ghostwhite">${priceArray[i]}</div>`);
+				total += priceArray[i];
+				// $('removeCol').append(`<div class="btn-group btn-group-sm" role="group" aria-label="...">Remove</div>`);
 			}
 		}
+		$('#subTotal').html(`<strong>$${total}.00</strong>`);
 	}
 	emptyCart(){
-
+		for (var i = 0; i < this.order.length; i++) {
+			localStorage.setItem(this.order[i], 0)
+		}
+		this.displayCart();
 	}
 }
 
 
 $(document).ready(function(){
-	localStorage.setItem('hexOne', 1);
-	localStorage.setItem('hexThree', 1);
-	localStorage.setItem('hexTwo', 1);
-	localStorage.setItem('hexFour', 1);
-	localStorage.setItem('hexFive', 1);
-	localStorage.setItem('hexSix', 1);
-	let hexOne = localStorage.getItem('hexOne');
-	let hexTwo = localStorage.getItem('hexTwo');
-	let hexThree = localStorage.getItem('hexThree');
-	let hexFour = localStorage.getItem('hexFour');
-	let hexFive = localStorage.getItem('hexFive');
-	let hexSix = localStorage.getItem('hexSix');
 
-	let orderArray = [hexOne, hexTwo, hexThree, hexFour, hexFive, hexSix];
+	for (var i = 0; i < orderArray.length; i++) {
+		if (localStorage.getItem(orderArray[i]) === null){
+			localStorage.setItem(orderArray[i], 0)
+		} 
+	}
 
-	let cursed = localStorage.getItem('curseName');
+	let curseCart = new Cart(orderArray);
 
-	let curseCart = new Cart(cursed, orderArray);
-
-	curseCart.displayCart();
-
-
-	
+	$('#emptyCart').click(function(){
+		curseCart.emptyCart();
+	});
+		
 });

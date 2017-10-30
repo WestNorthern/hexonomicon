@@ -26,6 +26,22 @@ end
 get '/cart' do
 	erb :cart
 end
+
+post '/cart' do
+	@first_name = params[:first_name]
+	@last_name = params[:last_name]
+	@email = params[:email]
+	@credit_card = params[:credit_card]
+	@exp = params[:exp]
+	@ccv = params[:ccv]
+	params[:total] = 'total'
+	params[:order] = 'order'
+
+	
+	Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', body: @order)
+
+	erb :contact_conf
+end
 	
 get '/contact' do
 	erb :contact
