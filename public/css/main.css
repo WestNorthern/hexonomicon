@@ -8,3 +8,36 @@
 p {
 	font-size: 1.2em;
 }
+
+.product-box {
+	background: black;
+	color: ghostwhite;
+	height: 200px;
+	padding: 3%;
+	/*box-sizing: border-box;*/
+	padding-right: 170px;
+	margin-top: 30px;
+	border-radius: 5px;
+	
+}
+
+
+.product-box h1 {
+	font-size: 1.4em;
+}
+
+.product-box img {
+	width: 120px;
+	height: 120px;
+	float: right;
+	padding: 2px;
+	background: darkgrey;
+	border: 1px solid ghostwhite;
+	position: absolute;
+	right: 6%;
+	top: 20%;
+	border-radius: 5px;
+	
+}
+
+

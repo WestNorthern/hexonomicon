@@ -17,5 +17,9 @@ post '/log_in' do
 	erb :home
 end
 
+
+get '/services' do
+	erb :services
+end
 		
 	
