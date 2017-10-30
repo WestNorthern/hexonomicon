@@ -23,5 +23,18 @@
 	border: 2px solid darkgray;
 	overflow: scroll;
 	height: 125px;
-	border-radius: 5px
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#morbid_card_image{
+	width: 90px;
+	margin-bottom: 5px;
+}
+
+.morbid_ad_text{
+	border-radius: 5px;
+	padding: 10px;
+	font-weight: bold;
+	background: darkgray;
 }
