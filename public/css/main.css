@@ -1,0 +1,26 @@
+#form_container{
+	text-align: center;
+	height: 600px;
+	color: gray;
+	background-image: url("/img/three_candles.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#sad_donut_image{
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+.sad_donut_text{
+	background: pink;
+	border-radius: 5px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.ad_container{
+	border: 1px solid black;
+	overflow: scroll;
+	height: 125px;
+}
