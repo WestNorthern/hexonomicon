@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'pony'
 
 get '/' do
 	erb :home
@@ -26,3 +27,14 @@ get '/cart' do
 	erb :cart
 end
 	
+get '/contact' do
+	erb :contact
+end
+
+post '/contact' do
+	@email = params[:email]
+	@message = params[:message]
+	Pony.mail(:to => 'rrichardson610@gmail.com', :from => @email, :subject => 'Contact Us', :body => @message)
+
+	erb :contact_conf
+end
