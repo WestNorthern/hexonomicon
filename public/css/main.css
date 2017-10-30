@@ -40,6 +40,10 @@ p {
 	border-radius: 5px;
 }
 
+.product-box img p{
+	width: 100px;
+}
+
 #form_container {
 	text-align: center;
 	height: 600px;
