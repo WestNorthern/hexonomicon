@@ -19,6 +19,7 @@ p {
 	padding-right: 170px;
 	margin-top: 30px;
 	border-radius: 5px;
+	position: relative;
 }
 
 
@@ -78,4 +79,9 @@ p {
 	padding: 10px;
 	font-weight: bold;
 	background: darkgray;
+}
+
+#col_container{
+	overflow: scroll;
+	height: 450px;
 }
