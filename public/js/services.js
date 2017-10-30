@@ -88,7 +88,7 @@ const orderArray = ['hexOne', 'hexTwo', 'hexThree', 'hexFour', 'hexFive', 'hexSi
 
 $(function(){
 
-	for (var i = 0; i < 5; i++) {
+	for (var i = 0; i < 6; i++) {
 		if (localStorage.getItem(orderArray[i]) == 1){
 			$(`.add-hex${i + 1}`).attr('style', 'background: ghostwhite; color: black;');
 			$(`.add-hex${i + 1}`).text('Added');

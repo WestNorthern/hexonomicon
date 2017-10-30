@@ -1,5 +1,5 @@
 const orderArray = ['hexOne', 'hexTwo', 'hexThree', 'hexFour', 'hexFive', 'hexSix'];
-const curseNameArray = ['Financial Ruin Curse', 'Barren Head Curse', 'Flatulence Jinx', 'The Odorous Ordeal', 'Plague of Powerlessness', 'blah, blah, blah'];
+const curseNameArray = ['Financial Ruin Curse', 'Barren Head Curse', 'Flatulence Jinx', 'The Odorous Ordeal', 'Plague of Powerlessness', 'Curse of the Earworm'];
 const priceArray = [1000, 2000, 3000, 4000, 5000, 6000];
 
 class Cart {
