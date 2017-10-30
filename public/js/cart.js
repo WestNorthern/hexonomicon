@@ -14,6 +14,7 @@ class Cart {
 				$('#curseCol').append(`<div class="col" style="background: black; color: ghostwhite">${curseNameArray[i]}:</div>`);
 				$('#quantCol').append(`<div class="col" style="background: black; color: ghostwhite">${this.order[i]}:</div>`);
 				$('#priceCol').append(`<div class="col" style="background: black; color: ghostwhite">${priceArray[i]}:</div>`);
+				$('removeCol').append(`<div class="btn-group btn-group-sm" role="group" aria-label="...">Remove</div>`);
 			}
 		}
 	}
