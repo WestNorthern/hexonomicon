@@ -18,4 +18,7 @@ post '/log_in' do
 end
 
 		
+get '/cart' do
+	erb :cart
+end
 	
