@@ -1,3 +1,4 @@
+
 .sidenav {
 	background-image: url('/img/alchemy.jpeg');
 	background-size: cover;
@@ -18,7 +19,6 @@ p {
 	padding-right: 170px;
 	margin-top: 30px;
 	border-radius: 5px;
-	
 }
 
 
@@ -37,7 +37,32 @@ p {
 	right: 6%;
 	top: 20%;
 	border-radius: 5px;
-	
 }
 
+#form_container {
+	text-align: center;
+	height: 600px;
+	color: gray;
+	background-image: url("/img/three_candles.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+#sad_donut_image {
+	width: 40px;
+	margin-bottom: 5px;
+}
+
+.sad_donut_text {
+	background: pink;
+	border-radius: 5px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.ad_container {
+	border: 2px solid darkgray;
+	overflow: scroll;
+	height: 125px;
+	border-radius: 5px
+}

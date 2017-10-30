@@ -22,4 +22,7 @@ get '/services' do
 	erb :services
 end
 		
+get '/cart' do
+	erb :cart
+end
 	
