@@ -1,0 +1,10 @@
+.sidenav {
+	background-image: url('/img/alchemy.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+p {
+	font-size: 1.2em;
+}
