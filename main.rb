@@ -38,3 +38,7 @@ post '/contact' do
 
 	erb :contact_conf
 end
+
+get '/about' do
+	erb :about
+end
