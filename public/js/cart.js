@@ -26,6 +26,8 @@ class Cart {
 		for (var i = 0; i < this.order.length; i++) {
 			localStorage.setItem(this.order[i], 0)
 		}
+		$('#curseCol').empty();
+		$('#priceCol').empty();
 		this.displayCart();
 	}
 }
@@ -44,5 +46,5 @@ $(document).ready(function(){
 	$('#emptyCart').click(function(){
 		curseCart.emptyCart();
 	});
-		
+
 });
