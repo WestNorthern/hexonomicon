@@ -4,13 +4,43 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-2" id="curseCol">Curse</div>
-		<div class="col-md-2" id="quantCol">Quantity</div>
+		<div class="col-md-3" id="curseCol">Curse</div>
 		<div class="col-md-2" id="priceCol">Price</div>
-		<div class="col-md-2" id="removeCol">Remove</div>
+	</div>
+	<br>
+	<button id="emptyCart" type="button" class="btn btn-danger">EMPTY CART</button>
+	<br>
+	<br>
+	<form action="/order_conf" method="POST">
+		
+		<p>FULL NAME OF THE INDIVIDUAL TO BE CURSED:</p>
+		<input type="text" name="curse_first">
+		<input type="text" name="curse_last"><br>
 
+		<br>
+		<p>PAYMENT INFO:</p> <br>
+		<input type="text" name="first_name" id="first_name" placeholder="First Name">
+		<input type="text" name="last_name" id="last_name" placeholder="Last Name"><br>
+		<input type="email" name="email" id="email" placeholder="Email"><br><br>
+		<input type="text" name="credit_card" placeholder="Credit Card #" >
+		<input type="text" name="exp" placeholder="Expiration (MM/YY)"> <br>
+		<input type="text" name="ccv" placeholder="CCV" >
+
+		<input type="submit" value="Submit Order">
+	</form>
+
+	<div id="pricing">Total Order Cost:
+		<div id="subTotal">
+			<script>
+				
+			</script>
+		</div>
 	</div>
 
+	<div id="orderSummary">
+
+		
+	</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
