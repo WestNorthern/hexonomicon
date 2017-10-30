@@ -93,3 +93,8 @@ p {
 	overflow: scroll;
 	height: 450px;
 }
+
+#bald_pic_container{
+	display: none;
+}
+
