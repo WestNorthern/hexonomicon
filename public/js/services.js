@@ -83,12 +83,24 @@ $('.rem-hex6').on('click', function(){
 
 
 
+const orderArray = ['hexOne', 'hexTwo', 'hexThree', 'hexFour', 'hexFive', 'hexSix'];
 
-$(document).ready(function(){
+
+$(function(){
+
+	for (var i = 0; i < 5; i++) {
+		if (localStorage.getItem(orderArray[i]) == 1){
+			$(`.add-hex${i + 1}`).attr('style', 'background: ghostwhite; color: black;');
+			$(`.add-hex${i + 1}`).text('Added');
+		} 
+	}
+
 	$('#bald_button').on('click', function(){
   	$('#bald_pic_container').show();
   });
+
   $('#chart_button').on('click', function(){
   	$('#bald_pic_container').hide();
   });
+
 });
