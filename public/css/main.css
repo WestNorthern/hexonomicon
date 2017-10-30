@@ -1,4 +1,45 @@
-#form_container{
+
+.sidenav {
+	background-image: url('/img/alchemy.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.product-box {
+	background: black;
+	color: ghostwhite;
+	height: 200px;
+	padding: 3%;
+	/*box-sizing: border-box;*/
+	padding-right: 170px;
+	margin-top: 30px;
+	border-radius: 5px;
+}
+
+
+.product-box h1 {
+	font-size: 1.4em;
+}
+
+.product-box img {
+	width: 120px;
+	height: 120px;
+	float: right;
+	padding: 2px;
+	background: darkgrey;
+	border: 1px solid ghostwhite;
+	position: absolute;
+	right: 6%;
+	top: 20%;
+	border-radius: 5px;
+}
+
+#form_container {
 	text-align: center;
 	height: 600px;
 	color: gray;
@@ -7,19 +48,19 @@
 	background-size: cover;
 }
 
-#sad_donut_image{
+#sad_donut_image {
 	width: 40px;
 	margin-bottom: 5px;
 }
 
-.sad_donut_text{
+.sad_donut_text {
 	background: pink;
 	border-radius: 5px;
 	padding: 10px;
 	font-weight: bold;
 }
 
-.ad_container{
+.ad_container {
 	border: 2px solid darkgray;
 	overflow: scroll;
 	height: 125px;
