@@ -39,6 +39,8 @@ post '/order_conf' do
 	@credit_card = params[:credit_card]
 	@exp = params[:exp]
 	@ccv = params[:ccv]
+	@total = params[:total]
+	@order = params[:order]
 	p params
 
 	
