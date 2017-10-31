@@ -41,10 +41,29 @@ post '/order_conf' do
 	@ccv = params[:ccv]
 	@total = params[:total]
 	@order = params[:order]
-	
-	Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', :body => @order)
+	p params
 
+	
+	if @email != ''
+		erb :order_conf
+		Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', :body => 'Thank you for your order!')
+	else
+		erb :order_fail
+	end
+end
+
+get '/order_conf' do 
+	if @email != ""
+		
+	
 	erb :order_conf
+	else
+		erb :order_fail
+	end
+end
+
+get '/order_fail' do
+	erb :order_fail
 end
 	
 get '/contact' do
