@@ -33,6 +33,8 @@ get '/cart' do
 end
 
 post '/order_conf' do
+	@curse_first = params[:curse_first]
+	@curse_last = params[:curse_last]
 	@first_name = params[:first_name]
 	@last_name = params[:last_name]
 	@email = params[:email]
@@ -44,9 +46,8 @@ post '/order_conf' do
 	p params
 
 	
-	if @email != ''
+	if @email != '' && @credit_card !="" && @ccv != "" && @exp != "" && @first_name != "" && @last_name != "" && @curse_first != "" && @curse_last != ""
 		erb :order_conf
-		Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', :body => 'Thank you for your order!')
 	else
 		erb :order_fail
 	end
@@ -54,12 +55,9 @@ end
 
 get '/order_conf' do 
 	if @email != ""
-		
-	
-	erb :order_conf
-	else
-		erb :order_fail
+		Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', :body => 'Thank you for your order!')
 	end
+	erb :order_conf
 end
 
 get '/order_fail' do
