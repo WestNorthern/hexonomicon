@@ -6,9 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  
   <style>
 
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -40,7 +41,7 @@
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;} 
+      .row.content { height:auto; } 
     }
 
   </style>
@@ -66,7 +67,11 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/cart">Checkout</a></li>
-        <li class="<%= 'active' if params[:controller] == 'cart' %>"><a href="/log_in"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li class="<%= 'active' if params[:controller] == 'cart' %>">
+          <a href="/log_in"><span class="glyphicon glyphicon-log-in">
+            
+          </span> Login</a>
+        </li>
         
       </ul>
     </div>
@@ -104,7 +109,7 @@
           <p class="morbid_ad_text">Morbid Greetings on State Street and 87th <br> 1-801-666-MORB</p>
         </div>
       </div>
-       <div class="well">
+      <div class="well">
         <div class="ad_container">
           <img id="donkers_image" src="/img/donkers.png" alt="">
           <p class="donkers_text">This guy was dinked</p>
@@ -125,6 +130,5 @@
   <p>Brought to you by The Code Coven. You can reach us individually at github: <br><a href="https://github.com/LindseyJ22" style="color: violet; margin-right: 10px;">Lindsey</a>  <a href="https://github.com/r0lfs" style="color: violet; margin-right: 10px;">Rolf</a> <a href="https://github.com/WestNorthern" style="color: violet; margin-right: 10px;">Ryan</a></p>
 </footer>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

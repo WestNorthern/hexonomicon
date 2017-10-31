@@ -3,17 +3,20 @@
 <!-- <link rel="stylesheet" href="/css/cart.css"> -->
 
 <div class="container">
-	<div class="row">
-		<p class="cart_text">Curse:</p>
-		<div class="col-md-3" id="curseCol"></div>
-		<p class="cart_text">Price:</p>
-		<div class="col-md-2" id="priceCol"></div>
-	</div>
-	<br>
-	<button id="emptyCart" type="button" class="btn btn-danger">EMPTY CART</button>
-	<br>
-	<br>
+	
+	
 	<form action="/order_conf" method="POST">
+
+		<div class="row">
+			<p class="cart_text">Curse:</p>
+			<div class="col-md-3" id="curseCol" name="order"></div>
+			<p class="cart_text" name="total">Price:</p>
+			<div class="col-md-2" id="priceCol"></div>
+		</div>
+		<br>
+			<button id="emptyCart" type="button" class="btn btn-danger">EMPTY CART</button>
+	  <br>
+	  <br>
 		
 		<p>FULL NAME OF THE INDIVIDUAL TO BE CURSED:</p>
 		<input type="text" name="curse_first">
