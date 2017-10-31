@@ -12,12 +12,12 @@ get '/log_in' do
 end
 
 post '/log_in' do
-	p params
 	@first_name = params[:first_name]
 	@last_name = params[:last_name]
 	@email = params[:email]
 	@password = params[:password]
 	params[:controller] = 'home'
+	p params
 	erb :home
 end
 
@@ -41,9 +41,10 @@ post '/order_conf' do
 	@ccv = params[:ccv]
 	@total = params[:total]
 	@order = params[:order]
+	p params
 
 	
-	Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', body: @order)
+	Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', :body => @order)
 
 	erb :order_conf
 end
