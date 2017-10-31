@@ -48,6 +48,10 @@ post '/order_conf' do
 
 	erb :order_conf
 end
+
+get '/order_conf' do
+	erb :order_conf
+end
 	
 get '/contact' do
 	params[:controller] = 'contact'
