@@ -41,8 +41,6 @@ post '/order_conf' do
 	@ccv = params[:ccv]
 	@total = params[:total]
 	@order = params[:order]
-	p params
-
 	
 	Pony.mail(to: @email, from: 'orders@hexonomicon.com', subject: 'Order Confirmation from Hexonomicon', :body => @order)
 
