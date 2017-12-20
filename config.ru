@@ -1,3 +1,3 @@
-require 'hexonomicon'
+require './main'
 
-run Sinatra::Application
+run Main
