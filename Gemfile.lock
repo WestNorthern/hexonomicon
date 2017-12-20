@@ -24,6 +24,7 @@ GEM
     pg (0.21.0)
     pony (1.11)
       mail (>= 2.0)
+    puma (3.11.0)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
@@ -47,6 +48,7 @@ PLATFORMS
 DEPENDENCIES
   pg
   pony
+  puma
   rake
   sinatra
   sinatra-activerecord
