@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'pony'
-
 require 'rubygems'
+
 
 get '/' do
 	params[:controller] = 'home'

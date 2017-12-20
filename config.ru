@@ -1,2 +1,2 @@
-
-exit
+require 'hexonomicon'
+run Sinatra::Application
