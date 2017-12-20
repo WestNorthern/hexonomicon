@@ -1,2 +1,2 @@
 require 'hexonomicon'
-run Sinatra: :Application
+run Sinatra::Application
